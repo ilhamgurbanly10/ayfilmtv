@@ -8,9 +8,6 @@
 
 .fl-simple-slider-arrow {
 	position: absolute;
-	top: calc(50% - 22.5px);
-	width: 45px;
-	height: 45px;
 	text-align: center;
 	background-color: rgba(0,0,0,0.5);
 	color: white;
@@ -19,6 +16,9 @@
 	cursor: pointer;
 	border: 0;
 	outline: 0 !important;
+	top: calc(50% - 17.5px);
+	width: 30px;
+	height: 35px;
 }
 
 @media (hover: hover) {
@@ -39,6 +39,15 @@
 
 .fl-simple-slider-next {
 	right: 0;
+}
+
+.fl-simple-slider-length {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	color: white;
+	font-weight: bold;
+	z-index: 2;
 }
 
 .fl-simple-slider-track-container {
@@ -120,8 +129,8 @@
 	padding: 0;
 	outline: 0 !important;
 	border-radius: 50%;
-	width: 12px;
-	height: 12px;
+	width: 8px;
+	height: 8px;
 	cursor: pointer;
 	background-color: #4771de;
 	transition: background-color .3s;
@@ -153,13 +162,10 @@
 }
 
 .fl-simple-slider-list {
-	padding: 0 1.5rem 0.5rem;
+	
 	position: absolute;
-	width: calc(100% - 3rem);
-	top: 0;
 	left: 0;
 	z-index: 2;
-	background-color: rgba(26,27,27,0.4);
 	display: -ms-flexbox;
 	display: flex;
 	flex-flow: row wrap;
@@ -171,6 +177,11 @@
 	-ms-flex-line-pack: center;
 	align-items: center;
   	-ms-flex-align: center;	
+	background-color: rgba(26,27,27,1);
+	top: auto;
+	bottom: 100%;
+	padding: 0 0.5rem 0.5rem;
+	width: calc(100% - 1rem);
 }
 
 .fl-simple-slider-item {
@@ -178,18 +189,29 @@
 }
 
 .fl-simple-slider-item:not(:last-child) {
-	margin-right: 0.5rem;
+	margin-right: 0.8rem;
 }
 
 .fl-simple-slider-btn {
 	background-color: transparent;
 	transition: background-color .3s;
-	padding: 0.3rem 0.5rem;
 	border-radius: 3px;
 	color: white;
 	font-weight: bold;
-	font-size: 12px;
 	cursor: pointer;
+	font-size: 7px;
+	padding: 2px 4px;
+	display: -ms-flexbox !important;
+	display: flex !important;
+	flex-flow: row wrap;
+	-ms-flex-wrap: wrap;
+	-ms-flex-direction: row;
+	justify-content: center;
+	-ms-flex-pack: center;	
+	align-content: center;
+	-ms-flex-line-pack: center;
+	align-items: center;
+  	-ms-flex-align: center;	
 }
 
 @media (hover: hover) {
@@ -205,45 +227,34 @@
 	background-color: red;
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (min-width: 576px) {
 
 	.fl-simple-slider-arrow {
-		top: calc(50% - 17.5px);
-		width: 30px;
-		height: 35px;
+		top: calc(50% - 22.5px);
+		width: 45px;
+		height: 45px;
 	}
 
 	.fl-simple-slider-dots-item:not(:last-child) {
-		margin-right: 0.8rem;
+		margin-right: 1rem;
 	}
 
 	.fl-simple-slider-dot {
-		width: 8px;
-		height: 8px;
+		width: 12px;
+		height: 12px;
 	}
 
 	.fl-simple-slider-list {
-		background-color: rgba(26,27,27,1);
-		top: auto;
-		bottom: 100%;
-		padding: 0 0.5rem 0.5rem;
-		width: calc(100% - 1rem);
+		width: calc(100% - 3rem);
+		top: 0;
+		bottom: auto;
+		padding: 0 1.5rem 0.5rem;
+		background-color: rgba(26,27,27,0.4);
 	}
 
 	.fl-simple-slider-btn {
-		font-size: 7px;
-		padding: 2px 4px;
-		display: -ms-flexbox !important;
-		display: flex !important;
-		flex-flow: row wrap;
-		-ms-flex-wrap: wrap;
-		-ms-flex-direction: row;
-		justify-content: center;
-		-ms-flex-pack: center;	
-		align-content: center;
-		-ms-flex-line-pack: center;
-		align-items: center;
-	  	-ms-flex-align: center;	
+		padding: 0.3rem 0.5rem;
+		font-size: 12px;
 	}
 
 }

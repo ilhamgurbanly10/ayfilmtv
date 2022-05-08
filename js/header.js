@@ -1,17 +1,26 @@
 
-// modal-container
+// calling-functions
 
-hideModalCOntainer();
+flashNavbarAnimations();
 
-function hideModalCOntainer() {
+// the-end-of-calling-functions
 
-	const modal = document.querySelector('#userModalContainer');
-	const btn = document.querySelector('.user-modal-con-close-btn');
 
-	function hide() { modal.classList.remove('fl-show'); }
 
-	btn.addEventListener('click', hide);
+// user-modal
+
+userModal = () => {
+
+	const toSignInBtn = document.querySelector('.user-modal-to-sign-in-btn');
+	const signUpCloser = document.querySelector('#signUpModalContainer .fl-modal-con-closer');
+	const signInBtn =  document.querySelector('.sign-in-btn');
+
+	const toSignIn = () => { signUpCloser.click(); signInBtn.click(); }
+
+	toSignInBtn.addEventListener('click', toSignIn);
 
 }
 
-// the-end-of-modal-container
+userModal();
+
+// the-end-of-user-modal

@@ -1,0 +1,28 @@
+
+
+.gallery-container {
+	width: 95%;
+	margin: 2rem auto 3rem;
+}
+
+.fl-gallery-title {
+	font-size: 25px;
+	line-height: 35px;
+	font-weight: bold;
+	color: #333333;
+	text-align: center;
+	margin: 1rem 0 0;
+}
+
+.fl-gallery-text {
+	color: #333333;
+	margin: 2rem auto 0;
+}
+
+@media (min-width: 992px) {
+
+	.gallery-container {
+		width: 86%;
+	}
+		
+}
