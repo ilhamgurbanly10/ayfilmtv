@@ -725,7 +725,7 @@ function flashGalleryModalContainer(el, speed, playSpeed, infinite) {
 
 		if(isPlaying) {
 			pause();
-			setTimeout( function() { play(); }, 1);
+			setTimeout( function() { play(); }, 100);
 		}	
 
 	}
@@ -831,7 +831,7 @@ function flashGalleryModalContainer(el, speed, playSpeed, infinite) {
 
 		if(isPlaying) {
 			pause();
-			setTimeout( function() { play(); }, 1);
+			setTimeout( function() { play(); }, 100);
 		}	
 
 	}
@@ -859,7 +859,7 @@ function flashGalleryModalContainer(el, speed, playSpeed, infinite) {
 
 		if(isPlaying) {
 			pause();
-			setTimeout( function() { play(); }, 1);
+			setTimeout( function() { play(); }, 100);
 			
 		}	
 	}
