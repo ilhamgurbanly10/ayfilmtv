@@ -340,6 +340,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    pointer-events: none;
     width: 100%;
 	height: auto;
 	max-height: 100%;
@@ -506,6 +507,7 @@
 	min-height: 100%;
 	user-drag: none;
     -webkit-user-drag: none;
+    pointer-events: none;
 }
 
 .fl-gallery-dots-con {
